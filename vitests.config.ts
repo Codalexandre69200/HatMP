@@ -13,11 +13,11 @@ export default defineConfig({
             '**/e2e/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}',
             '**/tests/e2e/**',
             '**/playwright/**',
-            '**/*.playwright.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'
+            '**/*.playwright.{spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'
         ],
 
         include: [
-            '**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'
+            '**/*.{test}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'
         ],
 
         globals: false,
