@@ -1,0 +1,62 @@
+{
+  "name": "hatmp",
+  "version": "1.0.0",
+  "description": "HatMP is a pornographic game where the Main Character change gender.",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "lint": "htmlhint",
+    "lint:css": "stylelint",
+    "lint:js": "eslint",
+    "lint:ts": "tsc",
+    "test:e2e": "playwright test",
+    "tauri": "tauri"
+  },
+  "keywords": [
+    "windows",
+    "android",
+    "game",
+    "html5",
+    "pornographic",
+    "changes gender",
+    "exe",
+    "apk",
+    "tauri",
+    "bestiality"
+  ],
+  "author": {
+    "name": "Alexandre Vuillet",
+    "email": "Codalexandre69200@hotmail.com"
+  },
+  "packageManager": "pnpm@10.28.0",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@playwright/test": "^1.57.0",
+    "@tauri-apps/cli": "^2.9.6",
+    "@types/node": "^25.0.8",
+    "@vitest/coverage-v8": "4.0.17",
+    "browserslist": "^4.28.1",
+    "css-declaration-sorter": "^7.3.1",
+    "cssnano": "^7.1.2",
+    "dotenv": "17.2.3",
+    "eslint": "^9.39.2",
+    "globals": "^17.0.0",
+    "htmlhint": "^1.8.0",
+    "jsdom": "27.4.0",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "postcss-px-to-viewport-8-plugin": "^1.2.5",
+    "stylelint": "^16.26.1",
+    "stylelint-config-standard": "^39.0.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.53.0",
+    "vite": "7.3.1",
+    "vitest": "4.0.17"
+  }
+}
