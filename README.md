@@ -21,16 +21,10 @@ This game is aimed at a mature audience due to its explicit content. By playing 
 
 Je m'appelle Alexandre j'aurais 26 ans cette année.
 J'aime écouter de la musique, joué au jeux-video et faire du codage. je suis français. 
-
 Ce project est ma version du jeux de FF5. 
-My name is Alexandre I will be 26 years old this year.
-I like listening to music, playing video games and coding. I am French. 
-
-This project is my version of the FF5 game. 
 
 My name is Alexandre I will be 26 years old this year.
 I like listening to music, playing video games and coding. I am French. 
-
 This project is my version of the FF5 game. 
 
 ---
@@ -39,8 +33,6 @@ This project is my version of the FF5 game.
 
 L'histoire se déroule dans un monde fictif moderne. 
 Au course de l'histoire, le Personnage principal aura des relation sexuelles avec d'autres personnes et des animaux et il se transformera en femme.
-The story takes place in a modern fictional world. 
-At the course of the story, the main character will have sexual relations with other people and animals and he will transform into a woman.
 
 The story takes place in a modern fictional world. 
 At the course of the story, the main character will have sexual relations with other people and animals and he will transform into a woman.
