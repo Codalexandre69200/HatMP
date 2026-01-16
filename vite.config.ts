@@ -3,15 +3,19 @@ import { resolve } from 'node:path'
 
 export default defineConfig({
     server: {
-        port: 5173,
-        host: true,
-        strictPort: true,
-        open: false,
-        cors: true,
-        hmr: {
-            overlay: true
-        }
-    },
+  port: 5173,
+  host: process.env.TAURI_DEV_HOST || 'localhost',
+  strictPort: true,
+  open: false,
+  cors: true,
+  hmr: {
+    overlay: true,
+    protocol: 'ws',
+    host: process.env.TAURI_DEV_HOST || 'localhost',
+    port: 5173
+  }
+},
+
 
     build: {
         outDir: 'dist',
