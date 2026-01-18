@@ -115,28 +115,39 @@ class ResponsiveManager {
             const overlay = document.createElement('div');
             overlay.id = 'landscape-warning';
             overlay.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.95);
-        display: none;
-        justify-content: center;
-        align-items: center;
-        z-index: 99999;
-        flex-direction: column;
-        color: white;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        padding: 20px;
-      `;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.95);
+                display: none;
+                justify-content: center;
+                align-items: center;
+                z-index: 99999;
+                flex-direction: column;
+                color: white;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding: 20px;
+            `;
 
-            overlay.innerHTML = `
-        <div style="font-size: 64px; margin-bottom: 20px;">📱 ↻</div>
-        <div style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">${warningMessage}</div>
-        <div style="font-size: 16px; opacity: 0.8;">This application works better in landscape mode</div>
-      `;
+            // Création sécurisée des éléments DOM
+            const iconDiv = document.createElement('div');
+            iconDiv.style.cssText = 'font-size: 64px; margin-bottom: 20px;';
+            iconDiv.textContent = '📱 ↻';
+
+            const messageDiv = document.createElement('div');
+            messageDiv.style.cssText = 'font-size: 24px; font-weight: bold; margin-bottom: 10px;';
+            messageDiv.textContent = warningMessage; // Sécurisé contre XSS
+
+            const subtitleDiv = document.createElement('div');
+            subtitleDiv.style.cssText = 'font-size: 16px; opacity: 0.8;';
+            subtitleDiv.textContent = 'This application works better in landscape mode';
+
+            overlay.appendChild(iconDiv);
+            overlay.appendChild(messageDiv);
+            overlay.appendChild(subtitleDiv);
 
             document.body.appendChild(overlay);
         }
@@ -312,7 +323,6 @@ responsive.on('resize', (data) => {
     console.log('Resize:', data);
 });
 
-// AUTO-ACTIVATION du mode paysage pour mobile et tablette
 if (responsive.isMobile()) {
     responsive.enforceLandscape({
         showWarning: true,
